@@ -3,7 +3,7 @@ const ffmpegInstaller = require('@ffmpeg-installer/ffmpeg');
 
 ffmpeg.setFfmpegPath(ffmpegInstaller.path);
 
-ffmpeg('video1/FullHD/video1_1080.mp4', { timeout: 432000 }).addOptions([
+ffmpeg('video1/4K/video1_4K.mp4', { timeout: 432000 }).addOptions([
     '-profile:v baseline',
     '-level 3.0',
     '-g 25',
@@ -13,7 +13,7 @@ ffmpeg('video1/FullHD/video1_1080.mp4', { timeout: 432000 }).addOptions([
     '-hls_time 2',        
     '-hls_list_size 50',   
     '-f hls'
-]).output('video1/FullHD/output.m3u8').on('end', () => {
+]).output('video1/4K/output.m3u8').on('end', () => {
     console.log('end');
 }).run();
 
