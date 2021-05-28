@@ -8,7 +8,7 @@ Clone this repository.
  Install dependencies.
 
 ```
-cd express-hls-example
+cd 360-VR-Streaming
 npm install
 ```
 You need to have HTTPS Certification by mkcert.
