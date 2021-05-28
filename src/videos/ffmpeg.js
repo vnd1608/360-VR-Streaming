@@ -3,7 +3,6 @@ const ffmpegInstaller = require('@ffmpeg-installer/ffmpeg');
 
 ffmpeg.setFfmpegPath(ffmpegInstaller.path);
 
-console.log('Start enconding ...');
 ffmpeg('video1/FullHD/video1_1080.mp4', { timeout: 432000 }).addOptions([
     '-profile:v baseline',
     '-level 3.0',
@@ -15,6 +14,6 @@ ffmpeg('video1/FullHD/video1_1080.mp4', { timeout: 432000 }).addOptions([
     '-hls_list_size 50',   
     '-f hls'
 ]).output('video1/FullHD/output.m3u8').on('end', () => {
-    console.log('End');
+    console.log('end');
 }).run();
 
