@@ -15,6 +15,8 @@ You need to have HTTPS Certification by mkcert.
 
 A guide are availble in <a href='https://12bit.vn/articles/tao-https-cho-localhost-su-dung-mkcert/'>here</a>.
 
+Or a tutorial video in <a href='https://www.youtube.com/watch?v=U09p5J8jbcA&t=457s'>here</a>.
+
 After you have 2 .pem certificate files, let copy them and replace exist file in 'certicates' directory.
 
 ```
