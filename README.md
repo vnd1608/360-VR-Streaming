@@ -10,6 +10,11 @@ Clone this repository.
 ```
 cd 360-VR-Streaming
 npm install
+npm install fluent-ffmpeg
+npm i @ffmpeg-installer/ffmpeg
+npm install express
+npm install express hls-server
+
 ```
 You need to have HTTPS Certification by mkcert.
 
